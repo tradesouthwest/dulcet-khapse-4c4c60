@@ -1,7 +1,7 @@
 # Healthy Work Habits - Firefox Extension
 
 A Firefox browser extension that promotes healthy work habits by displaying customizable reminders every 25 minutes to take brief standing breaks.
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a89565ae-25a2-4f49-8565-6a540d4e9a90/deploy-status)](https://app.netlify.com/projects/dulcet-khapse-4c4c60/deploys)
 ## Features
 
 - **Automatic Time Tracking**: Tracks active browser time and reminds you to take breaks
