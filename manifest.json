@@ -1,0 +1,55 @@
+{
+  "manifest_version": 2,
+  "name": "Healthy Work Habits",
+  "version": "1.0.0",
+  "description": "Promotes healthy work habits with customizable break reminders every 25 minutes",
+  
+  "permissions": [
+    "activeTab",
+    "alarms",
+    "storage",
+    "notifications",
+    "tabs"
+  ],
+  
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ],
+  
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Healthy Work Habits",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    }
+  },
+  
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  
+  "web_accessible_resources": [
+    "notification-banner.html",
+    "icons/*.svg"
+  ]
+}
