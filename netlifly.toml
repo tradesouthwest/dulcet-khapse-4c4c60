@@ -112,7 +112,7 @@
   # You can also define custom headers within your redirects blocks.
   [redirects.headers]
     X-From = "Netlify"
-    X-Api-Key = "some-api-key-string"
+    X-Api-Key = "a89565ae-25a2-4f49-8565-6a540d4e9a90"
 
 # Redirects for role-based access control don’t use the 'to' property.
 [[redirects]]
@@ -145,7 +145,7 @@
 
     # Basic-Auth allows you to password protect your whole site.
     # This feature may not be available on all plans.
-    Basic-Auth = "someuser:somepassword anotheruser:anotherpassword"
+    # //Basic-Auth = "someuser:somepassword anotheruser:anotherpassword"
 
 [functions]
   # Directory with serverless functions, including background
